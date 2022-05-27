@@ -4,7 +4,7 @@
         <h2>{{ $comics->title }}</h2>
         <p><span>SERIE:</span> {{ $comics->series }}</p>
         <p><span>TIPOLOGIA:</span> {{ $comics->type }}</p>
-        <p><span>DATA DI USCITA</span>: {{ $comics->sale_date }}</p>
+        <p><span>DATA DI PUBBLICAZIONE</span>: {{ $comics->sale_date }}</p>
         <p><span>PREZZO:</span> {{ $comics->price }} $</p>
         <p><span>DESCRIZIONE:</span></p>
         <p>{{ $comics->description }}</p>
@@ -57,6 +57,7 @@
 
     a:hover {
         text-decoration: underline;
+        color: blue;
     }
 
 </style>

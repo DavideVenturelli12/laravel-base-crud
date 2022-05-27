@@ -28,6 +28,8 @@
             @endforelse
         </tbody>
     </table>
+
+    <a href="{{ route('comics.create') }}">AGGIUNGI FUMETTO +</a>
 </body>
 
 
@@ -42,12 +44,14 @@
     body {
         padding: 30px 0;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         background-color: lightblue;
     }
 
     table {
         border: 2px solid black;
+        width: 40%;
     }
 
     th,
@@ -68,6 +72,7 @@
 
     a:hover {
         text-decoration: underline;
+        color: blue;
     }
 
 </style>
